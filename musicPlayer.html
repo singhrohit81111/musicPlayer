@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>musicPlayer clone</title>
+    
+    <style>
+        .navBar{
+            /*height: 11vh;
+            margin-top: -15px;*/
+            width:100vw;
+            margin-left: -10px;
+            margin-right:-8px;
+            background-color: rgb(2, 2, 2);
+            display: flex;
+        }
+        .navBar li{
+            list-style-type: none;
+            display:inline-block;
+            color: aliceblue;
+        }
+        .navBar a{
+            text-decoration: none;
+        }
+        .navBar ul{
+            padding-top:22px;
+        }
+        body{
+            background-color: black;
+        }
+        .container{
+            height:77vh;
+            width:99.8vw;
+            margin-left: -7px;
+            background-color: rgb(11, 41, 11);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+        .item{
+            height:4vh;
+            width:23vw;
+            margin-left:56px;
+            background-color: aliceblue;
+            border-radius: 8px;
+            border:2px solid black;
+            display:flex;
+            flex-direction: row;
+            justify-content:space-between;
+            font-size: 11px;
+        }
+        #id{
+            margin-top: 13px;
+        }
+        .col{
+            color: red;
+            font-size: 28px;
+            padding:7px;
+            cursor: pointer;
+            
+        }
+        input[type='range']{
+            width:90vw;
+        }
+        #buttons{
+            display:flex;
+            justify-content: center;
+            
+        }
+        #rangeBar{
+            display:flex;
+            justify-content: center;
+        }
+        .footerBar{
+            height:8vh;
+        }
+        .id1{
+          margin-top: 78px;
+        }
+        .gif{
+          position: absolute;
+          left:28px;
+          bottom:14px;
+        }
+        .item img{
+            border-radius: 7px;
+            padding-top:2px;
+            padding-left: 1px;
+        }
+        .songsListPlay{
+            padding-right: 1px;;
+            padding-top:1px;
+        }
+        .s1{
+         display: inline-block;
+         margin-left: 8px;
+        }
+        .detail{
+            margin-left: 11px;
+            margin-top: 18px;
+        }
+        .a11{
+            margin-right: 5px;
+            font-size: large;
+        }
+    </style>
+</head>
+<body style="overflow: hidden;">
+    <div class="navBar">
+        <div class="sss1">
+        <span class="s1"><img src="logo.png" alt="logo" height="52px" width="52px"></span>
+        </div>
+        <div class="detail">
+            <a href="#" class="a11">Home</a>
+            <a href="#" class="a11">About</a>
+        </div>
+    </div>
+    <div class="container">
+           <div class="item id1" id="id0">
+            <img src="1.jpg" alt="1" height="20px" width="20px">
+            <span class="songName">Let me Love you</span>
+            <span class="songsListPlay"><span class="totalTime">5:34 <i class="fa fa-play-circle miniPlay" id="0"></i></span> </span>
+           </div>
+           <div class="item" id="id1">
+            <img src="1.jpg" alt="1" height="20px" width="20px">
+            <span class="songName">Let me Love you</span>
+            <span class="songsListPlay"><span class="totalTime">5:34 <i class="fa fa-play-circle miniPlay" id="1"></i></span> </span>
+           </div>
+           <div class="item" id="id2">
+            <img src="1.jpg" alt="1" height="20px" width="20px">
+            <span class="songName">Let me Love you</span>
+            <span class="songsListPlay"><span class="totalTime">5:34 <i class="fa fa-play-circle miniPlay" id="2"></i></span> </span>
+           </div>
+           <div class="item" id="id3">
+            <img src="1.jpg" alt="1" height="20px" width="20px">
+            <span class="songName">Let me Love you</span>
+            <span class="songsListPlay"><span class="totalTime">5:34 <i class="fa fa-play-circle miniPlay" id="3"></i></span> </span>
+           </div>
+           <div class="item" id="id4">
+            <img src="1.jpg" alt="1" height="20px" width="20px">
+            <span class="songName">Let me Love you</span>
+            <span class="songsListPlay"><span class="totalTime">5:34 <i class="fa fa-play-circle miniPlay" id="4"></i></span> </span>
+           </div>
+           <div class="item" id="id5">
+            <img src="1.jpg" alt="1" height="20px" width="20px">
+            <span class="songName">Let me Love you</span>
+            <span class="songsListPlay"><span class="totalTime">5:34 <i class="fa fa-play-circle miniPlay" id="5"></i></span> </span>
+           </div>
+           <div class="item" id="id6">
+            <img src="1.jpg" alt="1" height="20px" width="20px">
+            <span class="songName">Let me Love you</span>
+            <span class="songsListPlay"><span class="totalTime">5:34 <i class="fa fa-play-circle miniPlay" id="6"></i></span> </span>
+           </div>
+           <div class="item" id="id7">
+            <img src="1.jpg" alt="1" height="20px" width="20px">
+            <span class="songName">Let me Love you</span>
+            <span class="songsListPlay"><span class="totalTime">5:34 <i class="fa fa-play-circle miniPlay" id="7"></i></span> </span>
+           </div>
+           <div class="item" id="id8">
+            <img src="1.jpg" alt="1" height="20px" width="20px">
+            <span class="songName">Let me Love you</span>
+            <span class="songsListPlay"><span class="totalTime">5:34 <i class="fa fa-play-circle miniPlay" id="8"></i></span> </span>
+           </div>
+           <div class="item" id="id9">
+            <img src="1.jpg" alt="1" height="20px" width="20px">
+            <span class="songName">Let me Love you</span>
+            <span class="songsListPlay"><span class="totalTime">5:34 <i class="fa fa-play-circle miniPlay" id="9"></i></span> </span>
+           </div>
+    </div>
+    <div class="footerBar">
+        <div id="rangeBar"><input type="range" name="progressBar" id="progressBar"  min="0" max="100" value="0" ></div>
+        <div id="buttons">
+            <i class="fa-solid fa-backward col" id="previous" ></i>
+            <i class="fa-solid fa-play col"  id="masterPlay" ></i>
+            <i class="fa-solid fa-forward col" id="nextt"></i>
+             
+        </div>
+        <div class="gif">
+           <span><img src="playing.gif" alt="1" height="25px" width="30px" id="giff" >
+            <span id="son" style="color: white;">Let me love you</span>
+           </span> 
+        </div>
+    </div>
+    <script src="Player.js"></script>
+</body>
+</html>
